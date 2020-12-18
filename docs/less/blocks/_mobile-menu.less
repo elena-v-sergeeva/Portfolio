@@ -1,0 +1,26 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color:#fff;
+    z-index: 4;
+
+    transform: translateX(100%);
+    transition: .5s;
+
+    @media (min-width: 768px) {
+    z-index: 5;
+    max-width: 320px;
+	}
+
+    @media (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
