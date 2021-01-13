@@ -130,6 +130,24 @@ button {
   padding: 0;
   background-color: transparent;
 }
+#backTop {
+  display: none;
+  font-size: 50px;
+  color: #e1bc10;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+}
+#backTop svg {
+  width: 50px;
+}
+@media (min-width: 1200px) {
+  #backTop {
+    display: none !important;
+  }
+}
 .container {
   width: 100%;
   max-width: 320px;
@@ -1468,7 +1486,6 @@ button.control-active {
     background-position: center;
     background-size: auto;
     margin: 0 auto;
-    max-width: 1600px;
   }
 }
 .contacts-email span {
@@ -1761,6 +1778,10 @@ label.error {
     opacity: 0.3;
     max-width: 200px;
   }
+}
+.contacts-form__success h2 {
+  font-size: 20px;
+  padding-left: 30px;
 }
 .footer {
   padding-top: 36px;

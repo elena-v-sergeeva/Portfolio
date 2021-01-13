@@ -167,4 +167,19 @@ $(document).ready(function () {
 			item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 		}
 	});
+
+	// показать кнопку скролл вверх
+
+	$('#backTop').hide();
+
+	$(window).scroll(function(){
+
+		if($(this).scrollTop() > 300){
+			console.log(1);
+			$('#backTop').fadeIn();
+		}
+		else{
+			$('#backTop').fadeOut();
+		}
+	});
 })	
