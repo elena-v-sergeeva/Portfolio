@@ -92,7 +92,8 @@ svg {
 
 button,
 textarea,
-input {
+input,
+span {
   outline: none;
 }
 
@@ -108,7 +109,9 @@ textarea {
   resize: none;
 }
 
-button {
+button,
+input,
+span {
   display: inline-block;
   cursor: pointer;
   border: 0;
@@ -116,7 +119,7 @@ button {
   background-color: transparent;
 }
 
-#backTop {
+#back-arrow {
   display: none;
   font-size: 50px;
   color: #e1bc10;
@@ -125,6 +128,10 @@ button {
   bottom: 20px;
   right: 20px;
   z-index: 5;
+
+  &:hover {
+    color: #ea736d;
+  }
 
   svg {
     width: 50px;
@@ -262,8 +269,8 @@ button {
       z-index: -1;
     }
 
-    &:hover:after {
-      background-color: var(--red);
-    }
+    // &:hover:after {
+    //   background-color: var(--red);
+    // }
   }
 }

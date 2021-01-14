@@ -35,11 +35,20 @@
 
 .contacts-email a {
   color: #039be5;
+
+  
+  &:hover {
+    color: #555599;
+  }
 }
 
 .contacts-email p {
   display: inline-block;
   color: #96969d;
+
+  &:hover {
+    color: #555599;
+  }
 }
 
 .contacts-title {
@@ -110,11 +119,14 @@
   }
 
   @media (min-width: 1200px) {
+    position: relative;
+    z-index: 4;
   }
 }
 
 .content-row {
   position: relative;
+  
 }
 
 .contacts-content {
@@ -295,6 +307,7 @@ label.error {
     position: absolute;
     left: -352px;
     top: -5px;
+    z-index: 2;
   }
 }
 

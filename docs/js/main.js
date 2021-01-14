@@ -170,16 +170,37 @@ $(document).ready(function () {
 
 	// показать кнопку скролл вверх
 
-	$('#backTop').hide();
+	$('#back-arrow').hide();
 
 	$(window).scroll(function(){
 
 		if($(this).scrollTop() > 300){
 			console.log(1);
-			$('#backTop').fadeIn();
+			$('#back-arrow').fadeIn();
 		}
 		else{
-			$('#backTop').fadeOut();
+			$('#back-arrow').fadeOut();
 		}
+	});
+
+	$(".contacts-btn").click(function (event) {
+        event.preventDefault();
+        let top = $('#section-contacts').offset().top;
+		$('body,html').animate({scrollTop: top}, 100);
+		// window.location.href = 'http://yandex.ru';
+	});
+	
+	$(".works").click(function (event) {
+        event.preventDefault();
+        let top = $('#section-portfolio').offset().top;
+		$('body,html').animate({scrollTop: top}, 100);
+		// window.location.href = 'http://yandex.ru';
+	});
+	
+	$(".hello-btn").click(function (event) {
+        event.preventDefault();
+        let top = $('#header-information').offset().top;
+		$('body,html').animate({scrollTop: top}, 100);
+		// window.location.href = 'http://yandex.ru';
 	});
 })	

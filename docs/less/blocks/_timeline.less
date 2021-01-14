@@ -51,6 +51,7 @@
 	}
 }
 
+
 .timeline-block-item {
   position: relative;
   width: 100%;
@@ -58,6 +59,9 @@
   min-height: 165px;
   padding-bottom: 40px;
 
+  .line-bottom-four&:hover:after {
+    background-color: var(--red);
+  }
   
 
   &:last-child::after {
@@ -109,9 +113,13 @@
   @media (min-width: 1200px) {
     padding-bottom: 64px;
     padding-left: 84px;
+    
+    &:hover {
+      .line-bottom-four:after{
+      background-color: var(--red);
+      }
     }
-
-
+  }
 }
 
 .timeline-block-item:nth-child(even) {
