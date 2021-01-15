@@ -3,9 +3,7 @@
     padding-bottom: 134px;
     background-color: #f4f8f9;
     margin: 0 auto;
-    
-    
-        
+            
     @media (min-width: 768px) {
 		padding-top: 68px;
         padding-bottom: 75px;
@@ -30,7 +28,6 @@
 	@media (min-width: 1200px) {
 		margin-bottom: 50px;
 	}
-
 }
 
 .portfolio-block-toggle-item {
@@ -43,6 +40,7 @@
         margin-right: 50px;
         font-weight: 700;
         color: #8fa5ae;
+        transition: .5s;
 
         &:last-child {
             margin-right: 0; 
@@ -59,21 +57,14 @@
         font-weight: 700;
         margin-right: 80px;
         letter-spacing: 0.8px;
-         
-        
-        
     } 
-	
-
 }
 
 button.control-active {
     color: var(--text);
-
 } 
 
 .portfolio-title h2{
-    
     margin-bottom: 46px;
     margin-left: -2px;
    
@@ -86,7 +77,6 @@ button.control-active {
         margin-left: 0;
         margin-bottom: 59px;
 	}
-    
 }
 
 .portfolio-content {
@@ -96,7 +86,6 @@ button.control-active {
     margin-bottom: 30px;
     align-items: center;
        
-
     @media (min-width: 768px) {
         flex-wrap: wrap;
         flex-direction: row;
@@ -115,7 +104,6 @@ button.control-active {
     align-items: center;
 
     @media (min-width: 768px) {
-        
         width: 340px;
         margin-bottom: 42px;
 	}
@@ -124,7 +112,6 @@ button.control-active {
         width: 360px;
         margin-bottom: 0;
 	}
-
 }
 
 .container-filter {
@@ -134,16 +121,11 @@ button.control-active {
     margin: 0 auto;
 }
 
-// .mix {
-//     padding-bottom: 15px;
-// }
-
 #page-nav {
 	display: none;
 	
 	@media (min-width: 1200px) {
-	
-        display: block;
+	    display: block;
         position: fixed;
         right: 80px;
         top: 375px;
@@ -177,4 +159,8 @@ button.control-active {
     text-decoration: underline;
     line-height: 1.2;
     letter-spacing: 0.7px;
+
+    &:hover {
+        color: #555599;
+    } 
 }

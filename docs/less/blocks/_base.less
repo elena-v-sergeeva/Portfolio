@@ -38,12 +38,6 @@ body.noscroll {
   z-index: 4;
   display: none;
 
-  // transform: translateX(100%);
-  // transition: .5s;
-
-  // @media (min-width: 1200px) {
-  // 	display: none;
-  // }
 }
 
 #overlay.active {
@@ -128,6 +122,7 @@ span {
   bottom: 20px;
   right: 20px;
   z-index: 5;
+  transition: .5s;
 
   &:hover {
     color: #ea736d;
@@ -140,9 +135,7 @@ span {
 	@media (min-width: 1200px) {
 		display: none !important;
 	}
-
 }
-
 
 .container {
   width: 100%;
@@ -157,7 +150,6 @@ span {
 
   @media (min-width: 768px) {
     max-width: 738px;
-    // padding: 0 30px;
   }
 
   @media (min-width: 992px) {
@@ -169,6 +161,7 @@ span {
     padding: 0;
   }
 }
+
 .title-three {
   margin-bottom: 27px;
 
@@ -195,6 +188,7 @@ span {
   font-size: 42px;
   line-height: 1.2;
   font-weight: 800;
+
   .two {
     font-size: 38px;
   }
@@ -222,18 +216,19 @@ span {
 .line-bottom-two:after {
   content: " ";
   position: absolute;
-  bottom: 8px;
+  bottom: 6px;
   left: 0;
   right: 0;
   height: 10px;
   background-color: var(--yellow);
-  z-index: -1;
+  z-index: -1; 
 
   @media (min-width: 768px) {
-  }
-
+		bottom: 8px;
+	}
+  
   @media (min-width: 1200px) {
-    bottom: 14px;
+    bottom: 11px;
     height: 12px;
   }
 }
@@ -254,6 +249,7 @@ span {
 }
 
 .line-bottom-four {
+  transition: .5s;
   @media (min-width: 1200px) {
     position: relative;
     z-index: 2;
@@ -268,9 +264,5 @@ span {
       background-color: var(--yellow);
       z-index: -1;
     }
-
-    // &:hover:after {
-    //   background-color: var(--red);
-    // }
   }
 }

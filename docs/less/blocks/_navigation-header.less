@@ -25,12 +25,17 @@
     
     a {
         margin-bottom: 27px;
-        border-bottom: 1px solid var(--text);
+        // border-bottom: 1px solid var(--text);
         width: fit-content;
         
         &:last-child {
             margin-bottom: 0;
-        }    
+            transition: .5s;
+        } 
+        
+        // &:hover {
+        //     border-bottom: 1px solid rgba(89, 187, 236, 0.95);
+        // }
     }
 }
 
@@ -62,12 +67,11 @@
     width: 48px;
     border-radius: 50%;
     border: 2px solid #f4f8f9;
-		&:hover {
-			// height: 52px;
-			// width: 52px;
-			border:#f4f8f9;
-					  
-	    }
+    transition: .5s;
+
+	&:hover {
+		border:#f4f8f9;
+	}
 }
 
 .header-connection.connection-mini {

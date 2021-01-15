@@ -142,6 +142,8 @@ span {
   bottom: 20px;
   right: 20px;
   z-index: 5;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 #back-arrow:hover {
   color: #ea736d;
@@ -231,16 +233,21 @@ span {
 .line-bottom-two:after {
   content: " ";
   position: absolute;
-  bottom: 8px;
+  bottom: 6px;
   left: 0;
   right: 0;
   height: 10px;
   background-color: var(--yellow);
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .line-bottom-two:after {
+    bottom: 8px;
+  }
+}
 @media (min-width: 1200px) {
   .line-bottom-two:after {
-    bottom: 14px;
+    bottom: 11px;
     height: 12px;
   }
 }
@@ -259,6 +266,10 @@ span {
     font-size: 26px;
     font-weight: 900;
   }
+}
+.line-bottom-four {
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 @media (min-width: 1200px) {
   .line-bottom-four {
@@ -354,6 +365,8 @@ span {
   line-height: 1.2;
   font-weight: 900;
   color: var(--text);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .header-logo:hover {
   color: var(--red);
@@ -396,6 +409,8 @@ span {
   font-weight: bold;
   line-height: 1.2;
   color: var(--text);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .menu-item:last-child {
   margin-right: 0;
@@ -462,7 +477,7 @@ span {
 }
 .header-brands-i:hover,
 .header-brands-i:active {
-  color: #0077b5;
+  color: var(--red);
 }
 .header-brands-g:hover,
 .header-brands-g:active {
@@ -544,16 +559,21 @@ span {
 .line-bottom:after {
   content: " ";
   position: absolute;
-  bottom: 8px;
+  bottom: 6px;
   left: 0;
   right: 0;
   height: 10px;
   background-color: var(--yellow);
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .line-bottom:after {
+    bottom: 8px;
+  }
+}
 @media (min-width: 1200px) {
   .line-bottom:after {
-    bottom: 20px;
+    bottom: 15px;
     height: 15px;
   }
 }
@@ -730,6 +750,12 @@ span {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .header-information {
+    padding-top: 70px;
+    margin-top: -70px;
   }
 }
 .header-skills {
@@ -923,7 +949,7 @@ span {
 .mobile-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  background-color: #f4f8f9;
+  background-color: rgba(89, 187, 236, 0.95);
 }
 .header-nav.nav-mini {
   padding-top: 25px;
@@ -960,13 +986,14 @@ span {
 }
 .header-menu.menu-mini a {
   margin-bottom: 27px;
-  border-bottom: 1px solid var(--text);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .header-menu.menu-mini a:last-child {
   margin-bottom: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .header-social.mini-social a {
   margin-right: 14px;
@@ -993,6 +1020,8 @@ span {
   width: 48px;
   border-radius: 50%;
   border: 2px solid #f4f8f9;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .mini-social a:hover {
   border: #f4f8f9;
@@ -1051,6 +1080,8 @@ span {
     margin-right: 50px;
     font-weight: 700;
     color: #8fa5ae;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .portfolio-block-toggle-item:last-child {
     margin-right: 0;
@@ -1187,10 +1218,15 @@ button.control-active {
   line-height: 1.2;
   letter-spacing: 0.7px;
 }
+.show-project-cards:hover {
+  color: #555599;
+}
 .portfolio-card {
   display: block;
   overflow: hidden;
   margin-bottom: 42px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .portfolio-card:last-child {
   margin-bottom: 0;
@@ -1372,6 +1408,8 @@ button.control-active {
   padding-left: 98px;
   min-height: 165px;
   padding-bottom: 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .line-bottom-four.timeline-block-item:hover:after {
   background-color: var(--red);
@@ -1411,6 +1449,8 @@ button.control-active {
   .timeline-block-item {
     padding-bottom: 64px;
     padding-left: 84px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .timeline-block-item:hover .line-bottom-four:after {
     background-color: var(--red);
@@ -1545,6 +1585,8 @@ button.control-active {
 }
 .contacts-email a {
   color: #039be5;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .contacts-email a:hover {
   color: #555599;
@@ -1552,6 +1594,8 @@ button.control-active {
 .contacts-email p {
   display: inline-block;
   color: #96969d;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .contacts-email p:hover {
   color: #555599;
@@ -1878,6 +1922,8 @@ label.error {
   font-size: 16px;
   color: #b0b0b0;
   border-bottom: 1px solid #b0b0b0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .webcademy:hover,
 .webcademy:active {

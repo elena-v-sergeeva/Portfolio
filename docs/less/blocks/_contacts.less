@@ -3,8 +3,7 @@
   padding-bottom: 60px;
   background-color: #f4f8f9;
   margin: 0 auto;
-  //   background-color: saddlebrown;
-
+  
   @media (min-width: 768px) {
     padding-top: 77px;
     padding-bottom: 85px;
@@ -17,16 +16,13 @@
     background-repeat: repeat;
     background-position: center;
     background-size: auto;
-	margin: 0 auto;
-	// max-width: 1600px;
-  }
+	  margin: 0 auto;
+	}
 }
 
 .contacts-email span {
   display: block;
-  @media (min-width: 768px) {
-  }
-
+  
   @media (min-width: 1200px) {
     display: inline-block;
     width: 190px;
@@ -35,7 +31,7 @@
 
 .contacts-email a {
   color: #039be5;
-
+  transition: .5s;
   
   &:hover {
     color: #555599;
@@ -45,6 +41,7 @@
 .contacts-email p {
   display: inline-block;
   color: #96969d;
+  transition: .5s;
 
   &:hover {
     color: #555599;
@@ -88,6 +85,7 @@
     font-weight: 700;
   }
 }
+
 .contacts-email {
   font-size: 18px;
   font-weight: 800;
@@ -109,10 +107,7 @@
 .row {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  // position: relative;
-  // z-index: 2;
-
+  
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -126,7 +121,6 @@
 
 .content-row {
   position: relative;
-  
 }
 
 .contacts-content {
@@ -184,10 +178,6 @@
       border-bottom: 1px solid var(--red);
     }
 
-    // &:empty {
-
-    // }
-
     @media (min-width: 768px) {
       height: 80px;
     }
@@ -238,6 +228,7 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+
     @media (min-width: 768px) {
       padding: 0 90px;
     }
@@ -252,9 +243,6 @@
 
 .form-item + .form-item {
   margin-top: 9px;
-
-  @media (min-width: 768px) {
-  }
 
   @media (min-width: 1200px) {
     margin-top: 37px;
@@ -302,8 +290,9 @@ label.error {
 
 .contacts-content-img {
   display: none;
+
   @media (min-width: 1200px) {
-	display: block;
+	  display: block;
     position: absolute;
     left: -352px;
     top: -5px;
@@ -313,8 +302,9 @@ label.error {
 
 .move-quot {
   display: none;
+
   @media (min-width: 1200px) {
-	display: block;
+	  display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -330,4 +320,3 @@ label.error {
     padding-left: 30px;
   }
 }
-
